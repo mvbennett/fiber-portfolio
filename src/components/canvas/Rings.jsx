@@ -22,7 +22,7 @@ export default function Rings() {
           key={i}
           ref={(el) => (ringsRef.current[i] = el)}
         >
-          <torusGeometry args={[3.35, 0.05, 16, 100]} />
+          <torusGeometry args={[3.35, 0.05, 16, 100]}></torusGeometry>
           <meshStandardMaterial emissive={[4, 0.1, 0.4]} color={[0, 0, 0]} />
         </mesh>
       })}

@@ -9,19 +9,12 @@ export default function Ground() {
     '/textures/terrain-normal.jpg'
   ])
 
-  const initialRender = useRef(true)
-
   useEffect(() => {
-    if (initialRender.current === false) {
-      [normal, roughness].forEach((t) => {
-        t.wrapS = RepeatWrapping;
-        t.wrapT = RepeatWrapping;
-        t.repeat.set(5, 5);
-      })
-
-      normal.encoding = LinearEncoding
-    }
-    initialRender.current = false
+    [normal, roughness].forEach((t) => {
+      t.wrapS = RepeatWrapping;
+      t.wrapT = RepeatWrapping;
+      t.repeat.set(1, 1);
+    })
   }, [normal, roughness])
 
   useFrame((state, delta) => {
