@@ -1,4 +1,5 @@
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import Ground from "./Ground";
 
 export default function CarShow() {
   return (
@@ -28,6 +29,8 @@ export default function CarShow() {
         castShadow
         shadowBias={-0.0001}
       />
+
+      <Ground />
       {/* <mesh>
         <boxGeometry args={[1, 1, 1]} />
         <meshBasicMaterial color={'red'} />
