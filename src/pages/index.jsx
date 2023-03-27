@@ -16,8 +16,11 @@ export default function Page(props) {
 
 // Canvas components go here
 // It will receive same props as the Page component (from getStaticProps, etc.)
-Page.canvas = (props) => <CarShow scale={0.5} route='/blob' position-y={-1} />
+Page.canvas = (props) => <CarShow />
 
 export async function getStaticProps() {
   return { props: { title: 'Index' } }
 }
+
+
+// credits: "Mazda RX-7 FC" (https://skfb.ly/6Tnso) by Lexyc16 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
