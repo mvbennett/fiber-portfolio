@@ -25,7 +25,7 @@ export default function CarShow() {
         intensity={2}
         angle={0.6}
         penumbra={0.5}
-        position={[5, 5, 0]}
+        position={[-5, 5, 0]}
         castShadow
         shadowBias={-0.0001}
       />
